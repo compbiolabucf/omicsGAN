@@ -5,3 +5,8 @@ OV: https://drive.google.com/file/d/1qH3VYvJAAxiqXpo9y25l-n7ISg7GDsqH/view?usp=s
 codes with suffix "_BRCA" are for breast cancer analysis and "_OV" for ovarian cancer analysis. \
 Users need to download all data necessary for a cancer analysis into the same folder as the codes. If both cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.   
 
+## Required Python packages
+- Numpy
+- Pandas
+- sklearn
+- PyTorch (pytorch version >=1.5.0, torchvision version >=0.6.0)
