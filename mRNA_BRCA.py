@@ -255,7 +255,7 @@ def prediction1(mRNA_value,mRNA_sample,GAN_epoch):
         scheduler.step()
 
       auc = valid(model_best, test_loader_final)   
-      result1.append(auc)
+      result1.append(val_auc)
       #print(n_trial,' ',auc)   
       
   result1=np.reshape(result1,(np.size(col1),-1))
