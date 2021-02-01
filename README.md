@@ -20,4 +20,4 @@ Users need to download all data necessary for a cancer analysis into the same fo
 
 
 ## **mRNA_BRCA.py**
-The framework to update mRNA expression for breast cancer.  
+The framework to update mRNA expression for breast cancer (update k).  
