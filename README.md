@@ -14,10 +14,10 @@ Users need to download all data necessary for a cancer analysis into the same fo
 ### **Framework**
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/netflow-1.png)
 
-
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 
 
 
 ## **mRNA_BRCA.py**
-The framework to update mRNA expression for breast cancer (update k).  
+The framework to update mRNA expression for breast cancer (update k). 
