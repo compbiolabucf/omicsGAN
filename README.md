@@ -10,3 +10,14 @@ Users need to download all data necessary for a cancer analysis into the same fo
 - Pandas
 - sklearn
 - PyTorch (pytorch version >=1.5.0, torchvision version >=0.6.0)
+
+### **Framework**
+![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/netflow-1.png)
+
+
+
+
+
+
+## **mRNA_BRCA.py**
+The framework to update mRNA expression for breast cancer.  
