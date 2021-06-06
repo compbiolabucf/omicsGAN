@@ -5,7 +5,7 @@ prefix of the code names are the cancer types and suffix tells whether it update
 
 All codes perform one update for one omics profile at a time. Users need to run the two codes for two omics profile of a cancer type in a sequential manner. For example, for lung cancer phenotype prediction, run each of **LUAD_mRNA.py** and **LUAD_miRNA.py** once that will provide the first update for both omics data. Then we can start the second update by running the same two codes once again. Command for running all the codes takes two argument in the following format 
 
-**Code_name update** (e.g., LUAD_mRNA.py 1 for first update, LUAD_mRNA 2 for second update)
+**Code_name update** (e.g., LUAD_mRNA.py 1 for first update, LUAD_mRNA.py 2 for second update)
 
 Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder. If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.   
 
