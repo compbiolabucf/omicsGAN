@@ -171,7 +171,7 @@ class Generator(nn.Module):
 
 
 mRNA = load_data('mRNA.csv')
-adj = pd.read_csv('/home/tahmed/OmicsGAN/RBP/new_bipartite_rbp.csv',index_col=0)
+adj = pd.read_csv('new_bipartite_rbp.csv',index_col=0)
 adj = adj.T
 _, x_ind1, y_ind1 = np.intersect1d(mRNA.index,adj.columns,return_indices=True)
 xy1, x_ind2, y_ind2 = np.intersect1d(mRNA.index,adj.index,return_indices=True)
