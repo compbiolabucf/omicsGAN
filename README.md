@@ -1,7 +1,8 @@
 # omicsGAN
 Necessary datasets for all cancer phenotype prediction are available through this link. https://drive.google.com/drive/folders/11Q0cIobQbraS7ig-38VEs-2IanL4cIPN?usp=sharing 
 
-Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
+Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. 
+<!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
 Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format.
 
 **Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network
