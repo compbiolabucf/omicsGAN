@@ -5,7 +5,7 @@ Users need to download all data necessary for a cancer analysis into the same fo
 <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
 Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format.
 
-**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network
+**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network \
 **Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv 
 
 ## Required Python packages
