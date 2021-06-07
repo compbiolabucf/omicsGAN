@@ -58,10 +58,10 @@ The framework to update miRNA expression for lung cancer (update k). It takes <i
 Users only need to run this code for generating synthetic data through omicsGAN using command line arguments mentioned above.  
 
 ## **omics1.py**
-updates the first omics data
+Called from omicsGAN.py and updates the first omics data
 
 ## **omics2.py**
-updates the second omics data
+Called from omicsGAN.py and updates the second omics data
 
 
 
