@@ -32,12 +32,12 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score
 
 
-if len(sys.argv)!=3:
-  print('input: code.py update gpu')
+if len(sys.argv)!=2:
+  print('input: code.py update')
   sys.exit()
 
 update = int(sys.argv[1])
-gpu_num = int(sys.argv[2])
+gpu_num = 0#int(sys.argv[2])
 torch.manual_seed(111)
 device = torch.device('cuda:'+str(gpu_num) if torch.cuda.is_available() else 'cpu')
 print(device)
