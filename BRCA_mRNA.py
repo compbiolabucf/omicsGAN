@@ -31,8 +31,8 @@ from functools import reduce
 from sklearn.metrics import f1_score
 from sklearn.ensemble import RandomForestClassifier
 
-if len(sys.argv)!=3:
-  print('input: code.py update gpu' )
+if len(sys.argv)!=2:
+  print('input: code.py update' )
   sys.exit()
 
 update = int(sys.argv[1])
