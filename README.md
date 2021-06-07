@@ -1,14 +1,11 @@
 # omicsGAN
-Necessary datasets for all codes are available through this link. https://drive.google.com/drive/folders/11Q0cIobQbraS7ig-38VEs-2IanL4cIPN?usp=sharing 
+Necessary datasets for all cancer phenotype prediction are available through this link. https://drive.google.com/drive/folders/11Q0cIobQbraS7ig-38VEs-2IanL4cIPN?usp=sharing 
 
-prefix of the code names are the cancer types and suffix tells whether it updates the mRNA or miRNA. Codes with prefix "RBP_" are for transcription factor-gene expression integration. 
+Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
+Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format.
 
-All codes perform one update for one omics profile at a time. Users need to run the two codes for two omics profile of a cancer type in a sequential manner. For example, for lung cancer phenotype prediction, run each of **LUAD_mRNA.py** and **LUAD_miRNA.py** once that will provide the first update for both omics data. Then we can start the second update by running the same two codes once again. Command for running all the codes takes two argument in the following format 
-
-**Code_name update** (e.g., LUAD_mRNA.py 1 for first update, LUAD_mRNA.py 2 for second update)\
-Value of the variable update can be arbitrarily large. 
-
-Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder. If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.   
+**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network
+**Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv 
 
 ## Required Python packages
 - Numpy
