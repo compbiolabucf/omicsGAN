@@ -1,8 +1,8 @@
 # omicsGAN
 Sample datasets for breast cancer phenotype prediction are available below.\
-mRNA expression: https://drive.google.com/file/d/15_Fv_21WhYVHWwgKFLs_eMXYEGob-L1n/view?usp=sharing
-miRNA expression: https://drive.google.com/file/d/1x1XKcfIpUhTwj68QvzY7BofRscHJZksM/view?usp=sharing
-interaction network: https://drive.google.com/file/d/1dbYzJYvEKMbh4Rxlvfo9EmTRdTkhOmoc/view?usp=sharing
+mRNA expression: https://drive.google.com/file/d/15_Fv_21WhYVHWwgKFLs_eMXYEGob-L1n/view?usp=sharing \
+miRNA expression: https://drive.google.com/file/d/1x1XKcfIpUhTwj68QvzY7BofRscHJZksM/view?usp=sharing \
+interaction network: https://drive.google.com/file/d/1dbYzJYvEKMbh4Rxlvfo9EmTRdTkhOmoc/view?usp=sharing \
 label data: 
 
 Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. 
