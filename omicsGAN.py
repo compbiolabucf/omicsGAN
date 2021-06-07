@@ -9,8 +9,8 @@ miRNA_file = sys.argv[3]
 adj_file = sys.argv[4]
 
 for i in range(1, total_update+1):
-	os.system('python3 -W ignore BRCA_mRNA.py '+str(i)+' '+mRNA_file+' '+miRNA_file+' '+adj_file)
-	os.system('python3 -W ignore BRCA_miRNA.py '+str(i)+' '+mRNA_file+' '+miRNA_file+' '+adj_file)
+	os.system('python3 -W ignore omics2.py '+str(i)+' '+mRNA_file+' '+miRNA_file+' '+adj_file)
+	os.system('python3 -W ignore omics1.py '+str(i)+' '+mRNA_file+' '+miRNA_file+' '+adj_file)
 
 best_mRNA = pd.read_csv('best_mRNA.txt',header=None)
 keep_mRNA = np.argsort(best_mRNA.values,axis=0)[::-1][0][0]
