@@ -148,9 +148,9 @@ class Generator(nn.Module):
             nn.BatchNorm1d(768),
             nn.ReLU(),
             
-            nn.Linear(768, 1024),
-            nn.BatchNorm1d(1024),
-            nn.ReLU(),
+            #nn.Linear(768, 1024),
+            #nn.BatchNorm1d(1024),
+            #nn.ReLU(),
 
             #nn.Linear(1024, 768),
             #nn.BatchNorm1d(768),
@@ -160,7 +160,7 @@ class Generator(nn.Module):
             #nn.BatchNorm1d(512),
             #nn.ReLU(),
             
-            nn.Linear(1024, n_input),
+            nn.Linear(768, n_input),
         )
 
     def forward(self, x):
