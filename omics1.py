@@ -115,17 +115,17 @@ class Discriminator(nn.Module):
             nn.ReLU(),
             nn.Dropout(0.3),
         
-            #nn.Linear(256, 128),
-            #nn.BatchNorm1d(128),
-            #nn.ReLU(),
-            #nn.Dropout(0.3),
+            nn.Linear(256, 128),
+            nn.BatchNorm1d(128),
+            nn.ReLU(),
+            nn.Dropout(0.3),
             
             #nn.Linear(128, 64),
             #nn.BatchNorm1d(64),
             #nn.ReLU(),
             #nn.Dropout(0.3),
     
-            nn.Linear(256, 1),
+            nn.Linear(128, 1),
             #nn.Sigmoid(),
         )
 
