@@ -170,6 +170,7 @@ class Generator(nn.Module):
 mRNA_file = sys.argv[2]
 miRNA_file = sys.argv[3]
 adj_file = sys.argv[4]
+label_file = sys.argv[5]
 
 mRNA = load_data(mRNA_file)
 miRNA = pd.read_csv(miRNA_file,index_col=0,delimiter=',')
@@ -190,7 +191,7 @@ miRNA = miRNA.fillna(0)
 adj[adj==1] = -1
 adj[adj==0] = 1
 
-data = pd.read_csv('label.csv', delimiter=',',index_col=0)
+data = pd.read_csv(label_file, delimiter=',',index_col=0)
 xy, x_ind, y_ind = np.intersect1d(miRNA.index,data.index,return_indices=True)
 mRNA = mRNA.iloc[:,x_ind]
 miRNA = miRNA.iloc[x_ind,:]
