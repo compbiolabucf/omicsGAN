@@ -1,9 +1,15 @@
 # omicsGAN
 Sample datasets for breast cancer phenotype prediction are available below.\
-mRNA expression: https://drive.google.com/file/d/15_Fv_21WhYVHWwgKFLs_eMXYEGob-L1n/view?usp=sharing \
-miRNA expression: https://drive.google.com/file/d/1x1XKcfIpUhTwj68QvzY7BofRscHJZksM/view?usp=sharing \
-interaction network: https://drive.google.com/file/d/1dbYzJYvEKMbh4Rxlvfo9EmTRdTkhOmoc/view?usp=sharing \
-label data: 
+mRNA expression: https://drive.google.com/file/d/13WNOJltciCOsa2I5gHK15mgKj6qx8KHT/view?usp=sharing \
+miRNA expression: https://drive.google.com/file/d/1MIKtpmsozOWmSbUiLcXc24lI21WCi1qh/view?usp=sharing \
+interaction network: https://drive.google.com/file/d/13AssxLZQdta4O-9bQhHaSgSuaslnJceO/view?usp=sharing \
+label data: https://drive.google.com/file/d/1MyRZ_vjsBZMSuDQDBdnkdcWiFJb1G5tW/view?usp=sharing
+
+## Required Python packages
+- Numpy (>=1.17.2)
+- Pandas (>=0.25.1)
+- sklearn (>=0.21.3)
+- PyTorch (pytorch version >=1.5.0, torchvision version >=0.6.0)
 
 Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. 
 <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
@@ -12,11 +18,7 @@ Omics datasets should be in feature by sample format and interaction netowrk sho
 **Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network \
 **Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv 
 
-## Required Python packages
-- Numpy
-- Pandas
-- sklearn
-- PyTorch (pytorch version >=1.5.0, torchvision version >=0.6.0)
+
 
 ### **Framework**
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/netflow-1.png)
