@@ -17,7 +17,7 @@ Users need to download all data necessary for a cancer analysis into the same fo
 Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format. Label data should be a column vector with each row corresponding to a sample. All datasets should be comma separated values. To run the code use the command \
 **Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
 
-For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users will use the following command  
+For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command  
 **Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv label.csv
 
 
