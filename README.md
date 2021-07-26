@@ -1,22 +1,25 @@
 # omicsGAN
 Sample datasets for breast cancer phenotype prediction are available below.\
-mRNA expression: https://drive.google.com/file/d/15_Fv_21WhYVHWwgKFLs_eMXYEGob-L1n/view?usp=sharing \
-miRNA expression: https://drive.google.com/file/d/1x1XKcfIpUhTwj68QvzY7BofRscHJZksM/view?usp=sharing \
-interaction network: https://drive.google.com/file/d/1dbYzJYvEKMbh4Rxlvfo9EmTRdTkhOmoc/view?usp=sharing \
-label data: 
-
-Users need to download all data necessary for a cancer analysis into the same folder as the codes. Updated omics datasets will be saved in the same folder as well. 
-<!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
-Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format.
-
-**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network \
-**Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv 
+mRNA expression: https://drive.google.com/file/d/13WNOJltciCOsa2I5gHK15mgKj6qx8KHT/view?usp=sharing \
+miRNA expression: https://drive.google.com/file/d/1MIKtpmsozOWmSbUiLcXc24lI21WCi1qh/view?usp=sharing \
+interaction network: https://drive.google.com/file/d/13AssxLZQdta4O-9bQhHaSgSuaslnJceO/view?usp=sharing \
+label data: https://drive.google.com/file/d/1MyRZ_vjsBZMSuDQDBdnkdcWiFJb1G5tW/view?usp=sharing
 
 ## Required Python packages
-- Numpy
-- Pandas
-- sklearn
+- Numpy (>=1.17.2)
+- Pandas (>=0.25.1)
+- sklearn (>=0.21.3)
 - PyTorch (pytorch version >=1.5.0, torchvision version >=0.6.0)
+
+## Quick start guide
+Users need to download all data necessary for a cancer analysis into the same folder as the three codes. Updated omics datasets will be saved in the same folder as well. 
+<!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
+Omics datasets should be in feature by sample format and interaction netowrk should be in first omics data by second omics data format. Label data should be a column vector with each row corresponding to a sample. All datasets should be comma separated values. To run the code use the command \
+**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
+
+For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command  
+**Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv label.csv
+
 
 ### **Framework**
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/netflow-1.png)

@@ -48,7 +48,7 @@ def feature_selection(X, y):
   return keep_ttest_index
 
 def load_data(path):
-  data = pd.read_csv(path,delimiter='\t',index_col=0)
+  data = pd.read_csv(path,delimiter=',',index_col=0)
   cols = data.columns.tolist()
   data = np.log1p(data)
   data.loc[:, 'var'] = data.loc[:, cols].var(axis=1)
@@ -173,9 +173,10 @@ if __name__ == '__main__':
   mRNA_file = sys.argv[2]
   miRNA_file = sys.argv[3]
   adj_file = sys.argv[4]
+  label_file = sys.argv[5]
   
   mRNA = load_data(mRNA_file)
-  miRNA = pd.read_csv(miRNA_file,index_col=0,delimiter='\t')
+  miRNA = pd.read_csv(miRNA_file,index_col=0,delimiter=',')
   adj = pd.read_csv(adj_file,index_col=0)
   xy, x_ind, y_ind = np.intersect1d(mRNA.columns,miRNA.columns,return_indices=True)
   _, x_ind1, y_ind1 = np.intersect1d(miRNA.index,adj.columns,return_indices=True)
@@ -193,13 +194,13 @@ if __name__ == '__main__':
   adj[adj==1] = -1
   adj[adj==0] = 1
 
-  data = pd.read_csv('brca_clinical.csv', delimiter=',',usecols=[0,1,4],index_col=0)
+  data = pd.read_csv(label_file, delimiter=',',index_col=0)
   xy, x_ind, y_ind = np.intersect1d(mRNA.columns,data.index,return_indices=True)
   mRNA = mRNA.iloc[:,x_ind]
   miRNA = miRNA.iloc[:,x_ind]
   y= data.iloc[y_ind,:].astype(str)
-  y[y=='Positive']=1
-  y[y=='Negative']=0
+  #y[y=='Positive']=1
+  #y[y=='Negative']=0
   labels=np.array(y).astype(np.float32)
 
   sample_name = mRNA.columns
