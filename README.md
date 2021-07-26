@@ -70,7 +70,7 @@ Called from omicsGAN.py and updates the first omics data
 ## **omics2.py**
 Called from omicsGAN.py and updates the second omics data
 
-
+For any concern or further assistance, contact t.ahmed@knights.ucf.edu
 
 
 
