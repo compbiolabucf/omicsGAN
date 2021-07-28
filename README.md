@@ -77,6 +77,8 @@ Omics datasets should be in feature by sample format with first column being the
   <img src="/Omics2.PNG" width="100" /> 
 </p>
 
+![alt-text-1](Omics1.PNG "title-1") ![alt-text-2](Omics2.PNG "title-2")
+
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics1.PNG) 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics2.PNG) 
 <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
