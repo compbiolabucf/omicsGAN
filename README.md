@@ -73,8 +73,8 @@ All input data is in csv format.
 ***omics data:***
 Omics datasets should be in feature by sample format with first column being the names of the features and first row being names of the samples. \
 <p float="left">
-  <img src="/Omics1.png" width="100" />
-  <img src="/Omics2.png" width="100" /> 
+  <img src="/Omics1.PNG" width="100" />
+  <img src="/Omics2.PNG" width="100" /> 
 </p>
 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics1.PNG) 
