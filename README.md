@@ -72,7 +72,7 @@ Users need to download all data necessary for a cancer analysis into the same fo
 All input data is in csv format.
 ***omics data:***
 Omics datasets should be in feature by sample format with first column being the names of the features and first row being names of the samples. \
-![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics 1.PNG)
+![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/network.PNG)
 <!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
  and interaction netowrk should be in first omics data by second omics data format. Label data should be a column vector with each row corresponding to a sample. All datasets should be comma separated values. To run the code use the command \
 **Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
