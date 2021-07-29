@@ -77,21 +77,21 @@ Omics datasets should be in feature by sample format with first column being the
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics1.PNG) 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics2.PNG) 
 
-*Interaction network*
+*Interaction network:*
 Interaction netowrk should be in first omics data by second omics data format. First column should be the feature names of first omics data and first row is the feature names of second omics data. 
 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/network.PNG) 
 
-*Label*
+*Label:*
 Label data should be a column vector with each row corresponding to a sample. The classifier is designed for binary classification only. For multi-class classification, SVM can be modified accordingly. 
 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/label.PNG) 
 
 **Command** 
 
-omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
+omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label \
+For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command
 
-For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command  
 *Sample command:* omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv label.csv
 
 For any concern or further assistance, contact t.ahmed@knights.ucf.edu
