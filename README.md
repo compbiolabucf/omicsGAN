@@ -71,15 +71,21 @@ Users need to download all data necessary for a cancer analysis into the same fo
 **Input data:**
 All input data is in csv format.
 ***omics data:***
-Omics datasets should be in feature by sample format with first column being the names of the features and first row being names of the samples. \
+Omics datasets should be in feature by sample format with first column being the names of the features and first row being names of the samples. Example images of omics data are attached below. \
 
-![Image description 112222](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics1.PNG) 
+![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics1.PNG) 
 ![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/Omics2.PNG) 
 
+***Interaction network***
+Interaction netowrk should be in first omics data by second omics data format. First column should be the feature names of first omics data and first row is the feature names of second omics data. 
+![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/network.PNG) 
 
-<!---If more than one cancer types are to be analyzed simulataneously, they must be stored in different directories as some datasets have duplicate names.--->
- and interaction netowrk should be in first omics data by second omics data format. Label data should be a column vector with each row corresponding to a sample. All datasets should be comma separated values. To run the code use the command \
-**Command:** omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
+***Label***
+Label data should be a column vector with each row corresponding to a sample. The classifier is designed for binary classification only. For multi-class classification, SVM can be modified accordingly. 
+![Image description](https://github.com/compbiolabucf/omicsGAN/blob/main/label.PNG) 
+
+**Command:** 
+omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label 
 
 For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command  
 **Sample command:** omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv label.csv
