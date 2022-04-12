@@ -48,8 +48,8 @@ The framework to update miRNA expression for lung cancer (update k). It takes <i
 
 ## Sample datasets 
 Sample datasets for breast cancer phenotype prediction are available below.\
-mRNA expression: https://drive.google.com/file/d/13WNOJltciCOsa2I5gHK15mgKj6qx8KHT/view?usp=sharing \
-miRNA expression: https://drive.google.com/file/d/1MIKtpmsozOWmSbUiLcXc24lI21WCi1qh/view?usp=sharing \
+mRNA expression: https://drive.google.com/file/d/1u-tmptVnm9yAjYGiby1FWAIsire3g_QF/view?usp=sharing \
+miRNA expression: https://drive.google.com/file/d/18c2efgsuYm2GZu9XxqpwrnGqZLvcFXIB/view?usp=sharing \
 interaction network: https://drive.google.com/file/d/13AssxLZQdta4O-9bQhHaSgSuaslnJceO/view?usp=sharing \
 label data: https://drive.google.com/file/d/1MyRZ_vjsBZMSuDQDBdnkdcWiFJb1G5tW/view?usp=sharing
 
