@@ -89,9 +89,9 @@ Label data should be a column vector with each row corresponding to a sample. Th
 
 **Command** 
 
-omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network, label \
+omicsGAN.py, total number of update(K), first omics dataset, second omics dataset, interaction network \
 For example, to generate synthtic mRNA and miRNA expression using our provided dataset, users have to use the following command
 
-*Sample command:* omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv label.csv
+*Sample command:* omicsGAN.py 5 mRNA.csv miRNA.csv bipartite_targetscan_gene.csv
 
 For any concern or further assistance, contact t.ahmed@knights.ucf.edu
