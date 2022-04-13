@@ -56,7 +56,7 @@ label data: https://drive.google.com/file/d/1MyRZ_vjsBZMSuDQDBdnkdcWiFJb1G5tW/vi
 
 ## Codes
 **omicsGAN.py**
-Users only need to run this code for generating synthetic data through omicsGAN using command line arguments mentioned above.  
+Users only need to run this code for generating synthetic data through omicsGAN using command line arguments mentioned below.  
 
 **omics1.py**
 Called from omicsGAN.py and updates the first omics data
