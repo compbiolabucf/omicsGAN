@@ -51,7 +51,7 @@ Sample datasets for breast cancer phenotype prediction are available below.\
 mRNA expression: https://drive.google.com/file/d/1u-tmptVnm9yAjYGiby1FWAIsire3g_QF/view?usp=sharing \
 miRNA expression: https://drive.google.com/file/d/18c2efgsuYm2GZu9XxqpwrnGqZLvcFXIB/view?usp=sharing \
 interaction network: https://drive.google.com/file/d/13AssxLZQdta4O-9bQhHaSgSuaslnJceO/view?usp=sharing \
-label data: https://drive.google.com/file/d/1MyRZ_vjsBZMSuDQDBdnkdcWiFJb1G5tW/view?usp=sharing
+label data: https://drive.google.com/file/d/16iIh_wekDtR4aETIajvhu-ejRMqseubb/view?usp=sharing
 
 
 ## Codes
