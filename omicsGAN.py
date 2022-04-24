@@ -20,13 +20,13 @@ for i in range(1, total_update+1):
 omics1_result = np.array(omics1_result)
 omics2_result = np.array(omics2_result)
 
-keep_mRNA = (np.argsort(np.mean(omics1_result,axis=1))[::-1][0])+1
-keep_miRNA = (np.argsort(np.mean(omics2_result,axis=1))[::-1][0])+1
+keep_mRNA = (np.argsort(np.mean(omics1_result,axis=1))[::-1][0])
+keep_miRNA = (np.argsort(np.mean(omics2_result,axis=1))[::-1][0])
 
 print('Best prediction for omics1: ',omics1_result[keep_mRNA])
-print('Best update for omics1: ',keep_mRNA)
+print('Best update for omics1: ',keep_mRNA+1)
 print('Best prediction for omics2: ',omics2_result[keep_miRNA])
-print('Best update for omics2: ',keep_miRNA)
+print('Best update for omics2: ',keep_miRNA+1)
 
 for i in range(1, total_update+1):
 	if i!=keep_mRNA:
