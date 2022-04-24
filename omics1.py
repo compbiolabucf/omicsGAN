@@ -185,13 +185,13 @@ def omics1(update,omics1,omics2,adj_file):
     adj[adj==1] = -1
     adj[adj==0] = 1
 
-    data = pd.read_csv('brca_clinical.csv', delimiter=',',index_col=0)
+    data = pd.read_csv('label.csv', delimiter=',',index_col=0)
     xy, x_ind, y_ind = np.intersect1d(mRNA.columns,data.index,return_indices=True)
     mRNA = mRNA.iloc[:,x_ind]
     miRNA = miRNA.iloc[:,x_ind]
     y= data.iloc[y_ind,:].astype(str)
-    y[y=='Positive']=1
-    y[y=='Negative']=0
+    #y[y=='Positive']=1
+    #y[y=='Negative']=0
     labels=np.array(y).astype(np.float32)
 
     sample_name = mRNA.columns
