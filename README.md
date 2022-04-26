@@ -1,5 +1,5 @@
 # omicsGAN
-omicsGAN is the generative adversarial network based framework that can integrate two omiocs data along with their interaction network to generate one synthetic data corresponding to each omics profile that can result in a better phenotype prediction. 
+omicsGAN is the generative adversarial network based framework that can integrate two omics data along with their interaction network to generate one synthetic data corresponding to each omics profile that can result in a better phenotype prediction. 
 
 
 ### **Framework**
