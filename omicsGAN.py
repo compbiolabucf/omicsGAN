@@ -29,10 +29,10 @@ print('Best prediction for omics2: ',omics2_result[keep_miRNA])
 print('Best update for omics2: ',keep_miRNA+1)
 
 for i in range(1, total_update+1):
-	if i!=keep_mRNA:
+	if i!=keep_mRNA+1:
 		os.remove("omics1_"+str(i)+".csv") 
 
-	if i!=keep_miRNA:
+	if i!=keep_miRNA+1:
 		os.remove("omics2_"+str(i)+".csv")
 
 
