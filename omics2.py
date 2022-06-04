@@ -73,7 +73,7 @@ def prediction(mRNA_value,GAN_epoch,labels):
   ACC_all=[]
 
   features=[]
-  for col in range(2):
+  for col in range(labels.shape[1]):
     y = labels[:,col]
     AUC = []
     ACC = []
