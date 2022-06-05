@@ -10,12 +10,13 @@ total_update = int(sys.argv[1])
 omics1_name = sys.argv[2]
 omics2_name = sys.argv[3]
 adj_file = sys.argv[4]
+label = sys.argv[5]
 
 omics1_result = []
 omics2_result = []
 for i in range(1, total_update+1):
-	omics1_result.append(omics1(i,omics1_name,omics2_name,adj_file))
-	omics2_result.append(omics2(i,omics1_name,omics2_name,adj_file))
+	omics1_result.append(omics1(i,omics1_name,omics2_name,adj_file,label))
+	omics2_result.append(omics2(i,omics1_name,omics2_name,adj_file,label))
 
 omics1_result = np.array(omics1_result)
 omics2_result = np.array(omics2_result)

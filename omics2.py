@@ -65,7 +65,7 @@ def SVM(X_train, y_train, X_test, y_test):
   return roc_auc_score(y_test, y_pred), accuracy_score(y_test, y_pred_bin),f1_score(y_test, y_pred_bin)
 
 
-def prediction(mRNA_value,GAN_epoch,labels):
+def prediction(mRNA_value,GAN_epoch,labels,update=None):
   X = np.array(mRNA_value).astype(float)
 
   trial=50
@@ -90,6 +90,8 @@ def prediction(mRNA_value,GAN_epoch,labels):
     ACC_all.append(np.mean(ACC)) 
 
   AUC_all = np.array(AUC_all).transpose()
+  if update==1:
+    print('AUC for real omics2:', np.mean(AUC_all,axis=0))
   '''
   if GAN_epoch==0:
     print('AUC for real data:', np.mean(AUC_all,axis=0))
@@ -160,7 +162,7 @@ class Generator(nn.Module):
         return output
 
 
-def omics2(update,omics1,omics2,adj_file):
+def omics2(update,omics1,omics2,adj_file,label):
     print('Generating miRNA update '+str(update))
 
 
@@ -183,7 +185,7 @@ def omics2(update,omics1,omics2,adj_file):
     adj[adj==1] = -1
     adj[adj==0] = 1
 
-    data = pd.read_csv('label.csv', delimiter=',',index_col=0)
+    data = pd.read_csv(label, delimiter=',',index_col=0)
     xy, x_ind, y_ind = np.intersect1d(mRNA.columns,data.index,return_indices=True)
     mRNA = mRNA.iloc[:,x_ind]
     miRNA = miRNA.iloc[:,x_ind]
@@ -278,7 +280,7 @@ def omics2(update,omics1,omics2,adj_file):
             optimizer_generator.step()
                 
             if epoch ==0:
-                auc = prediction(real_samples.cpu().detach().numpy(),epoch,labels)
+                auc = prediction(real_samples.cpu().detach().numpy(),epoch,labels,update)
                # sys.exit()
             elif epoch % 100==99:
                 auc = prediction(generated_samples.cpu().detach().numpy(),epoch,labels)
