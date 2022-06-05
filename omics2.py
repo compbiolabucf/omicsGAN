@@ -32,8 +32,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score
 import argparse
 
+
+
 torch.manual_seed(111)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
 
 def feature_selection(X, y):
   data_label1 = np.asarray([X[i] for i in range(len(y)) if y[i] == 1])
@@ -166,9 +169,9 @@ def omics2(update,omics1,omics2,adj_file,label):
     print('Generating miRNA update '+str(update))
 
 
-    mRNA = load_data('mRNA.csv')
-    miRNA = pd.read_csv('miRNA.csv',index_col=0,delimiter=',')
-    adj = pd.read_csv('bipartite_targetscan_gene.csv',index_col=0)
+    mRNA = load_data(omics1)
+    miRNA = pd.read_csv(omics2,index_col=0,delimiter=',')
+    adj = pd.read_csv(adj_file,index_col=0)
     xy, x_ind, y_ind = np.intersect1d(mRNA.columns,miRNA.columns,return_indices=True)
     _, x_ind1, y_ind1 = np.intersect1d(miRNA.index,adj.columns,return_indices=True)
     xy1, x_ind2, y_ind2 = np.intersect1d(mRNA.index.values,adj.index.values,return_indices=True)
